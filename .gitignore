@@ -4,3 +4,27 @@
 *.pt
 __pycache__
 wandb
+*.log
+.idea
+.vscode
+*.iml
+.venv/
+venv/
+__pycache__
+test-report.xml
+.pre-commit
+.databrickscfg
+
+# Generated from mac finder
+.DS_Store
+
+# local bundle files
+**/.databricks/*
+mlruns
+*.db
+.dbx
+# Exclude local environment directory
+# Exclude local distribution/packaging directories
+*.egg-info/
+build
+dist

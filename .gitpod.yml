@@ -1,0 +1,29 @@
+image:
+    file: .gitpod.Dockerfile
+
+tasks:
+  - name: Init GitPod
+    before: |
+      pip install --upgrade pip
+      pip install -Ur requirements.txt
+
+      poetry self update
+
+      brew upgrade databricks
+
+vscode:
+  extensions:
+    - charliermarsh.ruff
+    - databricks.databricks
+    - databricks.sqltools-databricks-driver
+    - eamodio.gitlens
+    - ms-python.python
+    - ms-python.debugpy
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
+    - ms-toolsai.vscode-jupyter-cell-tags
+    - ms-toolsai.vscode-jupyter-slideshow
+    - mtxr.sqltools
+    - redhat.vscode-yaml
+    - timonwong.shellcheck
